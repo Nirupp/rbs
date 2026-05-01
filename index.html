@@ -155,25 +155,7 @@
 
     /* INSTAGRAM */
     #gallery { background: var(--dark2); }
-    .ig-connect-box { background: var(--dark); border: 1.5px dashed var(--border); border-radius: 10px; padding: 2.5rem; text-align: center; margin-bottom: 2rem; }
-    .ig-connect-box.hidden { display: none; }
-    .ig-connect-icon { font-size: 3rem; margin-bottom: 1rem; }
-    .ig-connect-box h3 { font-family: 'Anton', sans-serif; font-size: 1.2rem; letter-spacing: 2px; margin-bottom: .5rem; }
-    .ig-connect-box p { color: var(--gray); font-size: .85rem; line-height: 1.7; max-width: 480px; margin: 0 auto 1.5rem; }
-    .ig-steps { display: flex; flex-direction: column; gap: .6rem; text-align: left; max-width: 420px; margin: 0 auto 1.75rem; }
-    .ig-step { display: flex; gap: .75rem; align-items: flex-start; font-size: .83rem; color: var(--gray); }
-    .ig-step-n { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--red); color: var(--white); font-family: 'Oswald', sans-serif; font-size: .7rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
-    .ig-step a { color: var(--red); text-decoration: none; }
-    .ig-link-btn { display: inline-flex; align-items: center; gap: .5rem; background: var(--dark3); border: 1.5px solid var(--border); color: var(--white); font-family: 'Oswald', sans-serif; font-size: .78rem; letter-spacing: 1.5px; text-transform: uppercase; padding: .6rem 1.5rem; border-radius: 5px; text-decoration: none; transition: border-color .2s, color .2s; }
-    .ig-link-btn:hover { border-color: var(--red); color: var(--red); }
-
-    /* Behold / widget container */
-    #behold-feed { min-height: 200px; }
-
-    /* Placeholder grid shown before widget loads */
-    .ig-placeholder-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
-    @media (min-width: 600px) { .ig-placeholder-grid { grid-template-columns: repeat(6, 1fr); } }
-    .ig-ph-cell { aspect-ratio: 1; background: var(--dark3); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--border); font-size: 1.5rem; }
+    #behold-feed { min-height: 100px; }
     .ig-follow-cta { text-align: center; margin-top: 1.5rem; }
     .ig-follow-btn { display: inline-flex; align-items: center; gap: .6rem; background: linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); color: var(--white); font-family: 'Oswald', sans-serif; font-size: .82rem; letter-spacing: 1.5px; text-transform: uppercase; padding: .7rem 1.75rem; border-radius: 5px; text-decoration: none; transition: opacity .2s; }
     .ig-follow-btn:hover { opacity: .88; }
@@ -698,46 +680,8 @@
       <p>751 posts and counting. Follow us on Instagram to see every build.</p>
     </div>
 
-    <!--
-    ══════════════════════════════════════════════════════════
-    INSTAGRAM FEED SETUP — Behold.so (Free, no credit card)
-    ══════════════════════════════════════════════════════════
-    1. Go to  https://behold.so  → click "Get Started Free"
-    2. Sign up (free tier shows up to 6 posts, no watermark on embed)
-    3. Click "Add Feed Source" → Instagram → authorize @rbswraps
-    4. Customize layout (grid, number of posts, etc.)
-    5. Click "Get Embed Code"
-    6. Copy the two lines of code it gives you
-    7. Delete the <div id="ig-placeholder"> block below
-    8. Paste Behold's embed code in its place
-    ══════════════════════════════════════════════════════════
-    -->
-
-    <!-- PLACEHOLDER — remove this block once Behold embed is pasted above -->
-    <div id="ig-placeholder">
-      <div class="ig-connect-box">
-        <div class="ig-connect-icon">📸</div>
-        <h3>CONNECT YOUR INSTAGRAM</h3>
-        <p>Replace this box with a live feed from @rbswraps. It takes 5 minutes and is completely free using Behold.so.</p>
-        <div class="ig-steps">
-          <div class="ig-step"><span class="ig-step-n">1</span><span>Go to <a href="https://behold.so" target="_blank">behold.so</a> and sign up free</span></div>
-          <div class="ig-step"><span class="ig-step-n">2</span><span>Add Feed Source → Instagram → authorize <strong>@rbswraps</strong></span></div>
-          <div class="ig-step"><span class="ig-step-n">3</span><span>Click <strong>Get Embed Code</strong> → copy the snippet</span></div>
-          <div class="ig-step"><span class="ig-step-n">4</span><span>In this file, find <code style="color:var(--red)">&lt;!-- PLACEHOLDER --&gt;</code> and replace this entire block with the copied code</span></div>
-        </div>
-        <a href="https://www.instagram.com/rbswraps/" target="_blank" class="ig-link-btn">📷 View @rbswraps on Instagram</a>
-      </div>
-
-      <!-- Placeholder grid — gives visual structure until real feed is connected -->
-      <div class="ig-placeholder-grid">
-        <div class="ig-ph-cell">📸</div>
-        <div class="ig-ph-cell">🚗</div>
-        <div class="ig-ph-cell">🎨</div>
-        <div class="ig-ph-cell">🛡️</div>
-        <div class="ig-ph-cell">🪟</div>
-        <div class="ig-ph-cell">✨</div>
-      </div>
-    </div>
+    <!-- INSTAGRAM FEED — paste Behold.so embed code here -->
+    <div id="behold-feed"></div>
 
     <div class="ig-follow-cta">
       <a href="https://www.instagram.com/rbswraps/" target="_blank" class="ig-follow-btn">
